@@ -1,1 +1,4 @@
-#include <iostream.h>
+#include <stdio.h>
+int mian(){
+    printf("hell");
+}
