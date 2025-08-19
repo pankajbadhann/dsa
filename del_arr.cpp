@@ -8,9 +8,11 @@ int main()
   cin >> n;
 
   int arr[n];
-  cout << "Enter the elements of the array: ";
+  cout << endl << "Enter the elements of the array: " << endl;
+
   for (int i = 0; i < n; i++)
   {
+    cout << "Element " << i + 1 << ": ";
     cin >> arr[i];
   }
 
@@ -21,6 +23,7 @@ int main()
   if (pos < 1 || pos > n)
   {
     cout << "Invalid position!" << endl;
+    return 1;
   }
 
   for (int i = pos - 1; i < n - 1; i++)
@@ -28,7 +31,7 @@ int main()
     arr[i] = arr[i + 1];
   }
 
-  n--; // Reduce size of array by one
+  n--;
 
   cout << "Array after deletion: ";
   for (int i = 0; i < n; i++)
